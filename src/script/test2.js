@@ -10,4 +10,4 @@ console.log('script')
 
 // export default 'Default text'
 
-export { default as Hello } from './test2'
+export default () => console.log('Hello world')
