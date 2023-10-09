@@ -1,9 +1,11 @@
-import { Hello } from '../../script/test'
+// import { Hello } from '../../script/test'
 
 // import Myname from '../../script/test'
 
 // import '../../script/test'
 
-console.log('container')
-Hello()
+// console.log('container')
+// Hello()
 // console.log(Myname)
+
+console.log(screenX)
