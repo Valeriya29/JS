@@ -2,17 +2,50 @@
 Це код container файлу для index сторінки,
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
+<form class="form">
+	<img height="160px" width="100%" src="https://picsum.photos/1200/1200" alt="Form image" class="form__image">
 
-<main>
-	<h1 id="locations">Hello world</h1>
-	<h1 id="locations">Hello world</h1>
-	Test
-</main>
+	<h1 class="form__title">Реєстрація користувача</h1>
 
-<h1 class="title big">Test</h1>
-<h2 class="big">Test</h2>
-<p> </p>
+	<div class=" form__group">
+		<label class="form__label" for="username">Імʼя користувача</label>
+		<input class="form__input" type="text" id="username" name="username" required>
+		<span class="form__button-save">Save</span>
+	</div>
 
+	<div class="form__group">
+		<label class="form__label" for="email">Email</label>
+		<input class="form__input" type="email" id="email" name="email" required>
+	</div>
+
+	<div class="form__group">
+		<label class="form__label" for="age">Age</label>
+		<input class="form__input" type="number" id="age" name="age" required>
+		<span class="form__button-add" operator="+" value="10">+10</span>
+		<span class="form__button-add" operator="-" value="10">-10</span>
+	</div>
+
+	<div class="form__group">
+		<label class="form__label" for="role">Оберіть роль</label>
+		<select multiple class="form__select" id="role" name="role" required>
+			<option value="" disabled="" selected="">Роль</option>
+			<option value="user">Користувач</option>
+			<option value="admin">Адміністратор</option>
+		</select>
+	</div>
+
+	<div class="form__group form__group--checkbox">
+		<label class="form__label" for="agree">Відправляти повідомлення на email</label>
+		<input class="form__input" type="checkbox" id="agree" name="agree" required>
+	</div>
+	<button class="form__button" type="submit">Зареєструватися</button>
+
+	<div id="outer">
+		<div id="inner">
+			Click me!
+		</div>
+	</div>
+</form>
 {{!
 Цей код містить лише те, що буде виводитись в
 
